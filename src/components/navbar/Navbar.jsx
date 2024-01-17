@@ -14,7 +14,7 @@ export default function Navbar() {
     const navigate = useNavigate();
     const handleLogout = () => {
         logOut();
-        toast.success("Guest Logged out!")
+        toast.success("User Logged out!")
         navigate("/login");
     }
 
