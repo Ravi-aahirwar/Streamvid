@@ -1,0 +1,14 @@
+.nav-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* gap: 13px; */
+    margin-top: 14px;
+}
+
+.videos-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}

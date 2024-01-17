@@ -1,0 +1,54 @@
+.Videoouter-div {
+    border: 1px solid #c6c6c6;
+    height: 38vh;
+    width: 400px;
+    border-radius: 15px;
+}
+.Videoouter-div img{
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.text-div {
+    height: 25vh;
+    width: 400px;
+    display: flex;
+}
+
+.creater-img{
+    margin-top: 1.4rem;
+    
+}
+.creater-img img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    /* border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px; */
+}
+.creater-content{
+    height: 80%;
+    width: 85%;
+    margin: auto;
+}
+.creater-name{
+    font-family: "Roboto","Arial",sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    font-weight: 500;
+    color: #f1f1f1;
+}
+.break-div{
+    margin-bottom: 1rem;
+}
+.creater-content h4{
+    font-size: 15px;
+    color: #aaa;
+    font-weight: 450;
+}
