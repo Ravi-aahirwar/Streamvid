@@ -23,14 +23,12 @@ export default function Navbar() {
         setIcons(false)
     }
 
-    // search filter
     const [searchterm, setSearchterm] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault()
         if (searchterm) {
             navigate(`/search/${searchterm}`);
-            // setSearchterm("");
         }
     }
 
@@ -53,7 +51,10 @@ export default function Navbar() {
                         }
                         <input type="text"
                             value={searchterm}
-                            onChange={(e) => setSearchterm(e.target.value)} placeholder='Search...' onClick={handleClicked} />
+                            onChange={(e) =>
+                                setSearchterm(e.target.value)}
+                            placeholder='Search...'
+                            onClick={handleClicked} />
                         <div className='search-icon' onClick={handleSubmit}>
                             <Search />
                         </div>
@@ -65,9 +66,15 @@ export default function Navbar() {
                     <div className="user-img">
                         <img src={user.photoURL ? user.photoURL : userImg} alt="user" />
                     </div>
-                    <div className="log-out" onClick={handleLogout}>
-                        <ExitToApp />
-                    </div>
+                    {
+                        user ? (
+                            <div className="log-out" onClick={handleLogout}>
+                                <ExitToApp />
+                            </div>
+                        ):(
+                            <p>Login</p>
+                        )
+                    }
                 </div>
             </div>
         </div>
