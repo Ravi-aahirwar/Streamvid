@@ -19,7 +19,7 @@ document.title="Streamvid | Login"
     try {
       await logIn(userData.email, userData.password);
       toast.success("User Logged in Successfully!")
-      navigate("/feed")
+      navigate("/")
     } catch (error) {
       const errorCode = error.code;
       const errorMessage = error.message;
@@ -31,7 +31,7 @@ document.title="Streamvid | Login"
     try {
       await googleSignIn();
       toast.success("User Signin Successfully!");
-      navigate("/feed");
+      navigate("/");
     } catch (error) {
       const errorCode = error.code;
       const errorMessage = error.message;
