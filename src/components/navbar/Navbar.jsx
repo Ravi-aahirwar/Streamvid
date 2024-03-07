@@ -64,14 +64,20 @@ export default function Navbar() {
             <div id='end'>
                 <div className="container">
                     <div className="user-img">
-                        <img src={user.photoURL ? user.photoURL : userImg} alt="user" />
+                        {
+                            user ? (
+                                <img src={user.photoURL ? user.photoURL : userImg} alt="user" />
+                            ) : (
+                                <img src={userImg} alt="user" />
+                            )
+                        }
                     </div>
                     {
                         user ? (
                             <div className="log-out" onClick={handleLogout}>
                                 <ExitToApp />
                             </div>
-                        ):(
+                        ) : (
                             <p>Login</p>
                         )
                     }
